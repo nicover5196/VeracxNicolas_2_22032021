@@ -11,4 +11,96 @@
 
 * {
     font-family: 'Raleway', Arial, Verdana, sans-serif;
+    padding:0;
+    margin:0;
 }
+a {
+    list-style-type: none;
+    text-decoration: none;
+    color:black;
+}
+ul{
+    list-style-type: none;
+}
+/* Header */
+
+nav  {
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px;
+}
+nav a {
+    margin:25px;
+}
+nav img {
+   
+}
+.navigation:focus   {
+    color:#0065FC;
+    border-top:1px solid #0065FC;
+    padding-top: 1.5rem;
+}
+.navigation:hover   {
+    color:#0065FC;
+    border-top:1px solid #0065FC;
+    padding-top: 1.5rem;
+}
+#inscription {
+    color:#0065FC;
+    font-weight: bold;
+}
+.pub{
+    margin:5px;
+    padding:20px;
+    line-height: 2em;
+}
+/* <span class="search">
+<i class="fas fa-map-marker-alt">
+<input type="recherche" name="ville" placeholder="Marseille,France"/>
+<button type="action">Rechercher</button></i></span> */
+.search{
+    margin:20px;
+}
+.search button{
+    border-top-right-radius:15px;
+    border-bottom-right-radius:15px;
+    background-color:#0065FC;
+    color:white;
+    padding:10px;
+    border:none;
+}
+.search input{
+    border:1px solid #DEEBFF;
+    padding:10px;
+}
+.search i{
+    border-radius:15px;
+    color:black;
+    background-color:#F2F2F2;
+    padding-left:20px;
+}
+.filter h4{
+    padding:4px;
+}
+.filter{  
+    display:flex;
+    justify-content: space-around;
+    max-width:680px;
+    margin:20px;
+    padding: 8px;
+    font-weight: bold;
+}
+.i1 i{
+    border-radius:20px;
+    color:#0065FC;
+    background-color:#DEEBFF;
+    padding:5px;
+}
+.i1{
+    border:1px solid #DEEBFF;
+    border-radius:20px;
+    border-left: none;
+    padding-right: 20px;
+}
+
