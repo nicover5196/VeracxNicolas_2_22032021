@@ -1,9 +1,8 @@
 @font-face
-
 /*Téléchargement de la police Raleway*/
-    {
-    font-family: 'Raleway';
-    src: url('static/Raleway-Black.ttf'),
+{
+        font-family: "Raleway", "Sans serif";
+        src: url('static/Raleway-Black.ttf'),
         url('static/Raleway-BlackItalic.ttf') url('Raleway-VariableFont_wght.ttf') url('Raleway-Italic-VariableFont_wght.ttf')
 }
 
@@ -55,12 +54,9 @@ nav img {
     padding:20px;
     line-height: 2em;
 }
-/* <span class="search">
-<i class="fas fa-map-marker-alt">
-<input type="recherche" name="ville" placeholder="Marseille,France"/>
-<button type="action">Rechercher</button></i></span> */
 .search{
     margin:20px;
+    padding:10px;
 }
 .search button{
     border-top-right-radius:15px;
@@ -68,25 +64,36 @@ nav img {
     background-color:#0065FC;
     color:white;
     padding:10px;
-    border:none;
+    border:none; 
+}
+.search button:active{
+    color:black;
+}
+.search input::placeholder{
+    color:black;
+    font-weight: bold;
 }
 .search input{
     border:1px solid #DEEBFF;
-    padding:10px;
+    padding:10px;    
 }
 .search i{
-    border-radius:15px;
+    border-top-left-radius:15px;
+    border-bottom-left-radius:15px;
     color:black;
     background-color:#F2F2F2;
-    padding-left:20px;
+    padding:12px;
+    padding-top:9.5px;
+    padding-bottom:12px;
+    border:px solid #DEEBFF;
 }
 .filter h4{
-    padding:4px;
+    padding:8px;
 }
 .filter{  
     display:flex;
     justify-content: space-around;
-    max-width:680px;
+    max-width:800px;
     margin:20px;
     padding: 8px;
     font-weight: bold;
@@ -95,7 +102,7 @@ nav img {
     border-radius:20px;
     color:#0065FC;
     background-color:#DEEBFF;
-    padding:5px;
+    padding:10px;
 }
 .i1{
     border:1px solid #DEEBFF;
@@ -103,4 +110,13 @@ nav img {
     border-left: none;
     padding-right: 20px;
 }
-
+.note{
+    padding:15px;
+    margin:18px;;
+}
+.note i{
+    color:white;
+    border-radius:20px;
+    background-color:#0065FC;
+}
+/* Body */
