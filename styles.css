@@ -120,3 +120,37 @@ nav img {
     background-color:#0065FC;
 }
 /* Body */
+
+.section1{
+    background-color:#F2F2F2;
+    max-width: 50%;
+    margin:20px;
+    border-radius:20px;
+    padding:20px;
+}
+.hotel1 {
+    width: 250px;
+    padding:10px;
+    margin:10px;
+    background-color:white;
+    border-radius:20px;
+}
+.hotel1 i {
+    color:#0065FC;
+}
+.article1{
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 15px;
+}
+.ihotel {
+    width: 250px;
+    height: 130px;
+    object-fit: cover;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.lien_section{
+    font-weight: bold;
+}
