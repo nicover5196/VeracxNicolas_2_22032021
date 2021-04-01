@@ -123,15 +123,15 @@ nav img {
 
 .section1{
     background-color:#F2F2F2;
-    max-width: 50%;
+    max-width: 100%;
     margin:20px;
     border-radius:20px;
     padding:20px;
 }
 .hotel1 {
     width: 250px;
-    padding:10px;
-    margin:10px;
+    padding:15px;
+    margin:15px;
     background-color:white;
     border-radius:20px;
 }
@@ -153,4 +153,52 @@ nav img {
 }
 .lien_section{
     font-weight: bold;
+}
+.section_aside {
+    display:flex;
+}
+.section2{
+    max-width:100%;
+    background-color:#F2F2F2;
+    margin:20px;
+    border-radius:20px;
+    padding:20px;
+}
+.ihotel2{
+    width: 175px;
+    height: 175px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.hotel2 i {
+    color:#0065FC;
+}
+.hotel2{   
+    padding:8px;
+    margin:18px;
+    background-color:white;
+    border-radius:20px;
+    display:flex;
+}
+.hotel2 h3{
+    width: 100%;
+}
+
+.populaire{
+    display:flex;
+    justify-content: space-between;
+}
+.populaire i{
+font-size:1.5em;
+}
+.section3{
+    display:flex;
+}
+.act_img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
