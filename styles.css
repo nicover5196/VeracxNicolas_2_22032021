@@ -57,6 +57,7 @@ nav img {
 .search{
     margin:20px;
     padding:10px;
+    display:flex;
 }
 .search button{
     border-top-right-radius:15px;
@@ -98,6 +99,10 @@ nav img {
     padding: 8px;
     font-weight: bold;
 }
+.filter a:hover{
+    color:#0065FC;
+    transform: scale(1.02);
+}
 .filter_icon i{
     border-radius:20px;
     color:#0065FC;
@@ -124,20 +129,21 @@ nav img {
 .section1{
     background-color:#F2F2F2;
     border-radius:20px;
-    padding:20px;
-    margin:60px;
+    padding:15px;
+    margin:20px;
 }
 .hotel1 {
     padding: 6px;
     margin:20px;
     background-color:white;
     border-radius:20px;
-    line-height: 1.8em;    
+    line-height: 1.8em;
+    margin-left:80px;
 }
 .hotel1:hover{
     transform: scale(1.02);
 }
-.hotel1 i {
+.fas.fa-star {
     color:#0065FC;
 }
 .article1{
@@ -154,11 +160,11 @@ nav img {
 .lien_section{
     font-weight: bold;
     text-align: left;
-    margin-left:40px;
+    margin-left:80px;
 }
 section h2{
     text-align: left;
-    margin-left:40px;
+    margin-left:80px;
     padding-top:25px;
 }
 .section_aside{
@@ -166,9 +172,9 @@ section h2{
 }
 .section2{
     background-color:#F2F2F2;
-    margin:40px;
     border-radius:20px;
-    padding:20px;
+    padding:15px;
+    margin:20px;
 }
 .ihotel2{
     width: 175px;
@@ -177,14 +183,12 @@ section h2{
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
 }
-.hotel2 i {
-    color:#0065FC;
-}
 .hotel2{
-    padding:8px;
-    margin:18px;
+    padding:6px;
+    margin:20px;
     background-color:white;
     border-radius:20px;
+    display:flex;
 }
 .hotel2:hover{
     transform: scale(1.02);
@@ -197,11 +201,22 @@ section h2{
     font-size:1.5em;
 }
 .section3{
+    margin:40px;
+    padding:20px;
     display:flex;
+    flex-direction:row;
+    flex-wrap: wrap;
 }
-.act_img{
-    height: 100%;
-    width: 100%;
+.act_img1{
+    width: 400px;
+    height: 550px;
+    object-fit:cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.act_img2{
+    height: 200px;
+    width: 300px;
     object-fit: cover;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
