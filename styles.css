@@ -126,13 +126,14 @@ nav img {
 }
 /* Body */
 
-.section1{
+.section_herbegement{
     background-color:#F2F2F2;
     border-radius:20px;
     padding:15px;
     margin:20px;
+    width: 75%;
 }
-.hotel1 {
+.hotel1{
     padding: 6px;
     margin:20px;
     background-color:white;
@@ -159,8 +160,7 @@ nav img {
 }
 .lien_section{
     font-weight: bold;
-    text-align: left;
-    margin-left:80px;
+    padding-left:80px;
 }
 section h2{
     text-align: left;
@@ -170,7 +170,7 @@ section h2{
 .section_aside{
     display:flex;
 }
-.section2{
+.section_aside_populaires{
     background-color:#F2F2F2;
     border-radius:20px;
     padding:15px;
@@ -183,29 +183,52 @@ section h2{
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
 }
-.hotel2{
-    padding:6px;
-    margin:20px;
-    background-color:white;
-    border-radius:20px;
-    display:flex;
+.hotel2 a figure {
+    display: flex;
+    padding: 6px;
+    margin: 20px;
+    background-color: white;
+    border-radius: 20px;
 }
 .hotel2:hover{
     transform: scale(1.02);
 }
+.hotel2 a figure figcaption {
+    padding: 10px;
+    position: relative;
+}
+
+.hotel2 a figure figcaption p {
+    line-height: 30px;
+}
+
+.hotel2 a figure figcaption .stars {
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+}
+.icon_star{
+    padding-top:70px;
+}
 .populaire{
     display:flex;
     justify-content: space-between;
+    padding:20px;
 }
 .populaire i{
     font-size:1.5em;
 }
-.section3{
-    margin:40px;
-    padding:20px;
+.section_activite{
+    background-color:#F2F2F2;
+    border-radius:20px;
+    padding:15px;
+    margin:20px;
+}
+.img_activite{
     display:flex;
-    flex-direction:row;
-    flex-wrap: wrap;
+}
+.column_img{
+    flex-direction: column;
 }
 .act_img1{
     width: 400px;
