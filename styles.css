@@ -346,4 +346,29 @@ header h1{
     padding:10px;
     margin-left:15px;
 }
+/* Activite */
+.section_activite{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin:0px;
+    padding:0px;
+}
+.activite img{
+    width: 370px;
+    height: 150px;
+    object-fit: cover;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.activite{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-bottom:30px;
+}
+.section_activite article{
+    margin:auto;
+    margin-bottom:20px;
+}
 }
