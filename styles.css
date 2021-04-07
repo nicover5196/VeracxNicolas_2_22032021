@@ -25,15 +25,17 @@ ul{
 
 nav  {
     display:flex;
-    justify-content:space-between;
     align-items:center;
     padding:20px;
 }
 nav a {
     margin:25px;
 }
-nav img {
-   
+.a_nav{
+    margin-left:72%;
+}
+nav img{
+    margin-left:20px;
 }
 .navigation:focus   {
     color:#0065FC;
@@ -45,9 +47,9 @@ nav img {
     border-top:1px solid #0065FC;
     padding-top: 1.5rem;
 }
-#inscription {
+.signup{
     color:#0065FC;
-    font-weight: bold;
+    font-weight:bold;
 }
 .pub{
     margin:5px;
@@ -258,6 +260,8 @@ section h2{
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
+/* Footer */
+
 footer{
     display:flex;
     justify-content: space-around;
@@ -272,4 +276,66 @@ footer h3{
 }
 footer ul{
     line-height:2em;
+}
+
+/* Responsive design*/
+
+@media all and (max-device-width: 680px){
+header h1{
+    font-size:22px;
+}
+.search{
+    padding-top:0px;
+    margin-top:0px;
+}
+.filter h4{
+    
+}
+.filter{
+    display:flex;
+    flex-wrap: wrap;
+}
+/* Aside */
+.section_aside{
+    display:flex;
+    flex-direction: column-reverse;
+}
+.section_aside_populaires{
+    margin:0px;
+    border-radius:0px;
+    font-size:15px;
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding:0px;
+}
+.hotel2 a figure{
+    padding:6px;
+    margin:10px;
+}
+/* Section Hebergement */
+#herbegements{
+    margin:15px;
+    text-align:center;
+}
+.hotel1{
+    padding: 6px;
+    margin: 20px;
+    background-color: white;
+    border-radius: 20px;
+}
+.hotel1 a figure figcaption{
+    border:solid black 1px;
+}
+.hotel1 figure{
+    border:solid black 1px;
+    padding:20px;
+}
+.section_herbegement{
+    background-color:white;
+    border-radius:20px;
+    width: 100%;
+    padding:0px;
+    margin:0px;
+}
 }
