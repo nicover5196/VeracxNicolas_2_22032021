@@ -379,3 +379,22 @@ footer{
     margin:0;
 }
 }
+@media all and (max-device-width: 1024px){
+.section_aside{
+    display:flex;
+    flex-direction:column;
+    flex-wrap: wrap;
+}
+.section_herbegement{
+    width: 100%;
+    margin:0px;
+    padding:0px;
+}
+.hotel1{
+    margin:10px;
+    margin-left:50px;
+}
+section h2{
+    padding:25px;
+}
+}
