@@ -397,4 +397,30 @@ footer{
 section h2{
     padding:25px;
 }
+.activite img{
+    width: 370px;
+    height: 150px;
+    object-fit: cover;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.activite{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-bottom:30px;
+}
+.section_activite article{
+    margin:auto;
+    margin-bottom:20px;
+}
+.section_activite h2{
+    text-align:center;
+}
+footer{
+    display:flex;
+    flex-wrap: wrap;
+    padding:2rem;
+    margin:0;
+}
 }
