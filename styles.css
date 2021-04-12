@@ -25,19 +25,18 @@ ul{
 
 nav {
     display: flex;
-    flex-direction: row;
+    justify-content:space-between;
     align-items: center;
-}
-.img_nav{
-    justify-content: flex-start;
-    margin:20px;
-    width: 100%;
+    border: solid blue 1px;
 }
 .bloc_navigation{
+    border: solid blue 1px;
     display:flex;
-    justify-content:space-around;
+    justify-content: flex-end;
+    padding:20px
+}
+.img_nav{
     margin:20px;
-    min-width: 20%;
 }
 .navigation:focus   {
     color:#0065FC;
@@ -97,11 +96,11 @@ nav {
 }
 .filter{  
     display:flex;
-    justify-content: space-around;
-    max-width:800px;
     margin:20px;
     padding: 8px;
     font-weight: bold;
+    max-width: 800px;
+    justify-content:space-around;
 }
 .filter_icon{
     padding:8px;
@@ -301,7 +300,13 @@ header h1{
     justify-content: flex-start;
 }
 .filter_icon{
-
+    padding:0px;
+    padding-right:5px;
+    margin:5px;
+}
+.filter_4icon{
+    display:flex;
+    flex-wrap:wrap;
 }
 /* Aside */
 .section_aside{
@@ -346,7 +351,6 @@ header h1{
 .section_herbegement{
     background-color:white;
     border-radius:20px;
-    width: 100%;
     padding:0px;
     margin:0px;
 }
@@ -394,11 +398,8 @@ footer{
         margin:0px;
         padding:0px;
     }
-    .bloc_navigation{
-        padding:20px
-    }
     .navigation{
-        padding:20px;
+        padding:15px;
     }
     .filter{
         padding:0px;
@@ -409,9 +410,9 @@ footer{
         flex-wrap: wrap;
     }
     .section_herbegement{
-        width: 100%;
         margin:0px;
         padding:0px;
+        width: 100%;
     }
     .hotel1{
         margin:10px;
