@@ -27,23 +27,37 @@ nav {
     display: flex;
     justify-content:space-between;
     align-items: center;
-    border: solid blue 1px;
 }
 .bloc_navigation{
-    border: solid blue 1px;
     display:flex;
     justify-content: flex-end;
-    padding:20px
+    padding:20px;
 }
 .img_nav{
     margin:20px;
 }
-.navigation:focus   {
+.navigation1,.navigation2{
+    margin-right:40px;
+}
+.signup{
+    margin-right:20px;
+}
+.navigation1:focus   {
     color:#0065FC;
     border-top:1px solid #0065FC;
     padding-top: 1.5rem;
 }
-.navigation:hover   {
+.navigation1:hover   {
+    color:#0065FC;
+    border-top:1px solid #0065FC;
+    padding-top: 1.5rem;
+}
+.navigation2:focus   {
+    color:#0065FC;
+    border-top:1px solid #0065FC;
+    padding-top: 1.5rem;
+}
+.navigation2:hover   {
     color:#0065FC;
     border-top:1px solid #0065FC;
     padding-top: 1.5rem;
@@ -138,7 +152,6 @@ nav {
     border-radius:20px;
     padding:15px;
     margin:20px;
-    width: 75%;
 }
 .hotel1{
     padding: 6px;
@@ -176,12 +189,15 @@ section h2{
 }
 .section_aside{
     display:flex;
+    width: 100%;
+    height: 80%;
 }
 .section_aside_populaires{
     background-color:#F2F2F2;
     border-radius:20px;
     padding:15px;
     margin:20px;
+    width:50%;
 }
 .ihotel2{
     width: 175px;
@@ -250,6 +266,8 @@ section h2{
 .activite{
     display:flex;
     justify-content: space-around;
+    height:650px;
+    width: 100%;
 }
 .tall_img_activite{
     width: 400px;
@@ -289,7 +307,28 @@ footer ul{
 
 header h1{
     font-size:22px;
+    margin-top:30px;
 }
+.a_nav{
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:60px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    border-bottom: 3px solid #F2F2F2;
+    padding-bottom:10px;
+}
+.navigation1{
+    border-bottom:3px solid #0065FC;
+    padding-bottom:10px;
+    color:#0065FC;
+}
+.navigation1,.navigation2{
+    margin:50px;
+}
+
 .search{
     padding-top:0px;
     margin-top:0px;
@@ -321,6 +360,8 @@ header h1{
     flex-direction: column;
     flex-wrap: wrap;
     padding:0px;
+    width: 100%;
+    height:100%;
 }
 .hotel2 a figure{
     padding:6px;
@@ -378,6 +419,7 @@ header h1{
     flex-direction: column;
     flex-wrap: wrap;
     margin-bottom:30px;
+    height:auto;
 }
 .section_activite article{
     margin:auto;
@@ -398,7 +440,10 @@ footer{
         margin:0px;
         padding:0px;
     }
-    .navigation{
+    .signup{
+        padding-left:15px;
+    }
+    .navigation1,.navigation2{
         padding:15px;
     }
     .filter{
@@ -408,6 +453,10 @@ footer{
         display:flex;
         flex-direction:column;
         flex-wrap: wrap;
+    }
+    .section_aside_populaires{
+        width: 90%;
+        height:100%;
     }
     .section_herbegement{
         margin:0px;
@@ -433,7 +482,9 @@ footer{
         flex-direction: column;
         flex-wrap: wrap;
         margin-bottom:30px;
-    }
+        width: 100%;
+        height:100%;
+        }
     .section_activite article{
         margin:auto;
         margin-bottom:20px;
@@ -447,4 +498,31 @@ footer{
         padding:2rem;
         margin:0;
     }
+    }
+    @media (min-device-width: 1050px) and (max-device-width: 1600px){
+        .tall_img_activite{
+            width: 320px;
+            height: 600px;
+            object-fit:cover;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+        }
+        .small_img_activite{
+            height: 200px;
+            width: 300px;
+            object-fit: cover;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+        }
+        .section_herbegement{
+            width: 100%;
+            height:60%;
+        }
+        .ihotel {
+            width: 250px;
+            height: 120px;
+            object-fit: cover;
+            border-top-right-radius: 10px;
+            border-top-left-radius: 10px;
+        }
     }
