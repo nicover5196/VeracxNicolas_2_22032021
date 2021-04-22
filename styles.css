@@ -1,11 +1,11 @@
 @font-face
 /*Téléchargement de la police Raleway*/
 {
-        font-family: "Raleway", "Sans serif";
-        src: url('static/Raleway-Black.ttf'),
-        url('static/Raleway-BlackItalic.ttf'),
-        url('Raleway-VariableFont_wght.ttf'),
-        url('Raleway-Italic-VariableFont_wght.ttf')
+    font-family: "Raleway", "Sans serif";
+    src: url('static/Raleway-Black.ttf'),
+    url('static/Raleway-BlackItalic.ttf'),
+    url('Raleway-VariableFont_wght.ttf'),
+    url('Raleway-Italic-VariableFont_wght.ttf')
 }
 
 /* Général */
@@ -244,9 +244,9 @@ section h2{
     font-size:1.5em;
 }
 .section_activite{
-    margin-top:20px;
     margin-bottom:20px;
-    padding:20px;
+    display:flex;
+    flex-wrap: wrap;
 }
 .section_activite article{
     box-shadow: 0 0 20px #0000002e;
@@ -305,7 +305,7 @@ footer ul{
 
 /* Responsive design*/
 
-@media all and (max-device-width: 680px){
+@media all and (max-width: 680px){
 
 header h1{
     font-size:22px;
@@ -439,7 +439,7 @@ footer{
     margin:0;
 }
 }
-@media (min-device-width: 681px) and (max-device-width: 1024px){
+@media (min-width: 681px) and (max-width: 1024px){
     nav{
         display:flex;
         justify-content: space-around;
@@ -505,7 +505,7 @@ footer{
         margin:0;
     }
     }
-    @media (min-device-width: 1050px) and (max-device-width: 1600px){
+    @media (min-width: 1050px) and (max-width: 1600px){
         .tall_img_activite{
             width: 320px;
             height: 600px;
