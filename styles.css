@@ -14,8 +14,8 @@
 }
 
 .container {
-    max-width: 1440px;
-    margin: auto;
+    max-width: 100vw;
+    /*margin: auto;*/
     /* background-image: url(modele.png); */
 }
 
@@ -155,56 +155,67 @@ nav {
     flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 20px;
-    margin-left: 20px;
     font-weight: bold;
     font-size: 18px;
     padding-left: 40px;
-    max-width: 1000px;
 }
 
 .filter_4icon {
-    margin-top: 20px;
+    width: 96%;
+    display: flex;
+    justify-content: start;
 }
+
+.filter_options {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 2px solid #d9d9d9;
+    border-left: none;
+    border-radius: 30px;
+    margin-left: 2%;
+}
+
 
 .filter_icon {
-    padding: 10px;
-    padding-left: 0px;
-    margin: 20px;
+    width: 185px;
 }
 
-.filter a:hover {
+.filter_icon p {
+    text-align: center;
+}
+
+.filter_options:hover {
     color: #0065FC;
     transform: scale(1.02);
+    background: #DEEBFF;
+    border: #DEEBFF;
+    cursor: pointer;
 }
 
-.filter_icon i {
+.filter_options i {
     color: #0065FC;
     background-color: #DEEBFF;
     border-radius: 50%;
-    height: 42px;
+    /*height: 42px;*/
     width: 40px;
     text-align: center;
     line-height: 40px;
-}
-
-.filter_icon {
-    border: 1px solid #d9d9d9;
-    border-radius: 20px;
-    border-left: none;
-    padding-right: 20px;
+    padding: 5px;
+    margin: -2px;
 }
 
 .note {
-    padding: 15px;
-    margin: 20px;
-    margin-left: 40px;
+padding: 15px;
+margin: 20px;
+margin-left: 40px;
 }
 
 .note i {
-    color: white;
-    border-radius: 20px;
-    background-color: #0065FC;
-    margin-right: 20px;
+color: white;
+border-radius: 20px;
+background-color: #0065FC;
+margin-right: 20px;
 }
 /* Body */
 
@@ -214,22 +225,23 @@ nav {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    padding: 25px;
+    /*padding: 25px;*/
     margin-left: 30px;
     margin-right: 30px;
-    padding-left: 40px;
-    padding-right: 40px;
+    /*padding-left: 40px;*/
+    /*padding-right: 40px;*/
+    padding: 2%;
+    width: 65%;
 }
 
 .hotel1 {
-    padding: 6px;
-    margin: 20px;
     background-color: white;
     border-radius: 20px;
     font-size: 14px;
     line-height: 19px;
-    margin-top: 20px;
-    padding-bottom: 16px;
+    padding: 0.5%;
+    width: 30%;
+    margin-bottom: 2%;
 }
 
 .hotel1:hover {
@@ -244,15 +256,15 @@ nav {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .ihotel {
-    width: 235px;
+    width: 100%;
     height: 115px;
     object-fit: cover;
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
 }
 
 .lien_section {
@@ -274,6 +286,7 @@ section h2 {
     flex-wrap: wrap;
     flex-direction: column;
     margin-right: 30px;
+    padding: 1%;
 }
 
 .ihotel2 {
@@ -331,7 +344,7 @@ section h2 {
     display: flex;
     flex-wrap: wrap;
     padding: 20px;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .section_activite a {
@@ -358,8 +371,6 @@ section h2 {
 .section_activite h2 {
     width: 100%;
     text-align: left;
-    padding: 20px;
-    margin: 20px;
 }
 
 .column_img {
@@ -473,7 +484,7 @@ footer ul {
         flex-direction: column-reverse;
     }
     .section_aside_populaires {
-        margin: 0px;
+        /*margin: 0px;*/
         border-radius: 0px;
         font-size: 15px;
         display: flex;
@@ -565,23 +576,70 @@ footer ul {
     }
 }
 
-@media (min-width: 681px) and (max-width: 1280px) {
+@media all and (max-width: 1280px) {
+    .filter h4 {
+        padding: 2%;
+    }
+
+    .section_aside {
+        width: 100%;
+    }
+
+    .section_aside_populaires {
+        width: 100%;
+        /*margin-left: 30px;*/
+        /*margin-right: 30px;*/
+        /*padding-left: 40px;*/
+        /*padding-right: 40px;*/
+    }
+
+    .section_herbegement h2 {
+        padding: 20px;
+    }
+
+    .article1 {
+        padding: 2%;
+    }
+    .section_herbegement{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .hotel1 {
+        width: 100%;
+        margin-bottom: 1%;
+        padding: 1%;
+    }
+
+    .section_activite a, .section_activite .column_img {
+        margin-bottom: 2%;
+    }
+
     .tall_img_activite {
-        width: 250px;
-        height: 300px;
+        width: 100%;
+        height: 100px;
         object-fit: cover;
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
     }
     .small_img_activite {
         height: 100px;
-        width: 300px;
+        width: 100%;
         object-fit: cover;
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
     }
     .section_activite {
         font-size: 12px;
+        padding: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0px;
+        padding: 0px;
+        font-size: 15px;
+        line-height: 20px;
+        flex-direction: column;
     }
     .filter {
         display: flex;
@@ -589,6 +647,10 @@ footer ul {
     }
     .filter_icon {
         padding: 0px;
+    }
+
+    .filter_options {
+        margin-bottom: 1%;
     }
     .filter_icon i {
         color: #0065FC;
@@ -601,14 +663,16 @@ footer ul {
     }
     .filter_4icon {
         display: flex;
+        flex-wrap: wrap;
+        /*justify-content: space-between;*/
     }
     .section_aside {
         display: flex;
         flex-wrap: wrap;
-        max-width: 800px;
+        /*max-width: 800px;*/
     }
     .section_aside_populaires {
-        margin: auto;
+        /*margin: auto;*/
         margin-top: 20px;
     }
 }
