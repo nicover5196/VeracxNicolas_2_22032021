@@ -462,6 +462,9 @@ footer ul {
         justify-content: flex-start;
         padding-left: 0px;
     }
+    .filter h4 {
+        margin-left: 10px;
+    }
     .filter_icon {
         padding: 0px;
         padding-right: 5px;
